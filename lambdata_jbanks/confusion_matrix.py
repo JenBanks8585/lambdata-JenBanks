@@ -19,9 +19,11 @@ false_positive=int(input('What is the actual false but predicted true value? '))
 false_negative=int(input('What is the actual true but predicted false value? '))
 true_positive= int(input('What is the actual true and predicted true value? '))
 
+#Setting up values in an array
 array= [[true_negative, false_positive],
         [false_negative, true_positive]]
 
+#Converting array into a dataframe with labels
 cm=pd.DataFrame(array, 
                 columns=[i for i in Predicted], 
                 index= [i for i in Actual])
@@ -29,6 +31,7 @@ cm=pd.DataFrame(array,
 print(''*3)
 print(cm)
 print(''*3)
+
 # Plotting
 plt.figure(figsize=(10,7))
 plt.title('Confusion Matrix')
