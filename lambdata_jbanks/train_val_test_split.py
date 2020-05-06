@@ -45,5 +45,4 @@ def train_val_test_split (X, y, train_size, val_size, test_size, random_seed, sh
     
     return X_train, X_val, X_test, y_train, y_val, y_test
 
-#print(train_val_test_split(X, y, train_size, val_size, test_size, random_seed, shuffle=True))
-print('X_train', X_train)
+print(train_val_test_split(X, y, train_size, val_size, test_size, random_seed, shuffle=True))
