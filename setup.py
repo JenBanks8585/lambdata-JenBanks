@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lambdata_jbanks", # the name that you will install via pip
-    version="1.1.1",
+    version="1.1.2",
     author="Jen Banks",
     author_email="jenniferbanks8585@gmail.com",
     description="DS helper",
