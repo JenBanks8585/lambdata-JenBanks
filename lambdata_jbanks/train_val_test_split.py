@@ -32,11 +32,29 @@ def train_val_test_split (X, y, train_size=train_size, val_size=val_size, test_s
         random_state=random_seed, 
         shuffle= shuffle)
     
-    print('')
-    print(X)
-    print('')
-    print(y)
-    
-    return X_train, X_val, X_test, y_train, y_val, y_test
+    X_train=pd.DataFrame(X_train)
+    X_val=pd.DataFrame(X_val)
+    X_test=pd.DataFrame(X_test)
+    y_train=pd.DataFrame(y_train)
+    y_val=pd.DataFrame(y_val)
+    y_test=pd.DataFrame(y_test)
+
+    print('X_train') 
+    print(X_train)
+    print("")
+    print('X_val')
+    print(X_val)
+    print("")
+    print('X_test')  
+    print(X_test)
+    print("")
+    print('y_train')  
+    print(y_train)
+    print("")
+    print('y_val')  
+    print(y_val)
+    print("")
+    print('y_test')  
+    print(y_test)
 
 
