@@ -8,8 +8,6 @@ import pandas as pd
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 
-print ('Read/upload X dataframe. ')
-print ('Read/upload y dataframe')
 train_size=float(input('What is the train size in decimal form? '))
 val_size=float(input('What is the validation size in decimal form? '))
 test_size=float(input('What is the test size in decimal form? '))
@@ -56,5 +54,3 @@ def train_val_test_split (X, y, train_size=train_size, val_size=val_size, test_s
     print("")
     print('y_test')  
     print(y_test)
-
-
